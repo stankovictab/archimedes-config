@@ -1,8 +1,8 @@
 spring:
   application:
     name: campaign-service # Name in Eureka Dashboard and for config-server
-  config:
-    import: configserver:http://localhost:8888 # TODO: Set docker service name and parametrize this value
+  # config:
+    # import: configserver:http://localhost:8888 # TODO: Set docker service name and parametrize this value
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/changelog-master.xml
@@ -23,9 +23,9 @@ spring:
     password: passwordAAAAAAAAAAAAAAa
 server:
   port: 0 # Random port
-# eureka:
-  # client:
-    # serviceUrl:
-      # defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
   instance:
     preferIpAddress: true
