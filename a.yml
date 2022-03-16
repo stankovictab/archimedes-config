@@ -1,1 +1,3 @@
-test: "ok"
+spring:
+  application:
+    name: campaign-service # Name in Eureka Dashboard and for config-server
