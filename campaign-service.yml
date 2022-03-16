@@ -21,14 +21,14 @@ spring:
       ddl-auto: validate # create would override tables, validate won't
     show-sql: true
   datasource:
-    url: jdbc:postgresql://db:5432/thedockerdbAAAAAAAAAAAAAAAAAa
+    url: jdbc:postgresql://db:5432/thedockerdb
     username: thedockeruser
     password: password
-server:
-  port: 0 # Random port
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
-  instance:
-    preferIpAddress: true
+# server:
+  # port: 0 # Random port
+# eureka:
+  # client:
+    # serviceUrl:
+      # defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
+  # instance:
+    # preferIpAddress: true
