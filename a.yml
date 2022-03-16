@@ -2,6 +2,7 @@ spring:
   application:
     name: campaign-service
     # HELLO!
+    ooooo: ooooooo
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/changelog-master.xml
