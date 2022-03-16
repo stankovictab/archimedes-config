@@ -21,7 +21,7 @@ spring:
       ddl-auto: validate # create would override tables, validate won't
     show-sql: true
   datasource:
-    url: jdbc:postgresql://db:5432/thedockerdb
+    url: jdbc:postgresql://db:5432/thedockerdbAAAAAAAAAAAAAAAAAa
     username: thedockeruser
     password: password
 server:
