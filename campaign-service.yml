@@ -22,7 +22,7 @@ spring:
     show-sql: true
   datasource:
     url: jdbc:postgresql://db:5432/thedockerdb
-    username: thedockeruser2
+    username: thedockeruser
     password: password
 # server:
   # port: 0 # Random port
